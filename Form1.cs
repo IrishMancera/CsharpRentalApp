@@ -102,6 +102,11 @@ namespace CsharpRentalApp
                 MessageBox.Show("Error submitting data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void listBoxEmployees_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     // ✅ Employee Model

@@ -28,118 +28,134 @@
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.listBoxEmployees = new System.Windows.Forms.ListBox();
-            this.btnGet = new System.Windows.Forms.Button();
-            this.btnPost = new System.Windows.Forms.Button();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtDepartmentID = new System.Windows.Forms.TextBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblDepartmentID = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-
-            // 🔹 Title Label
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(120, 20);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(250, 22);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Employee Rental System";
-
-            // 🔹 Employee ListBox
-            this.listBoxEmployees.Font = new System.Drawing.Font("Arial", 10F);
-            this.listBoxEmployees.FormattingEnabled = true;
-            this.listBoxEmployees.ItemHeight = 16;
-            this.listBoxEmployees.Location = new System.Drawing.Point(20, 60);
-            this.listBoxEmployees.Name = "listBoxEmployees";
-            this.listBoxEmployees.Size = new System.Drawing.Size(450, 120);
-            this.listBoxEmployees.TabIndex = 1;
-
-            // 🔹 GET Button
-            this.btnGet.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btnGet.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnGet.Location = new System.Drawing.Point(20, 200);
-            this.btnGet.Name = "btnGet";
-            this.btnGet.Size = new System.Drawing.Size(220, 40);
-            this.btnGet.TabIndex = 2;
-            this.btnGet.Text = "Load Employees";
-            this.btnGet.UseVisualStyleBackColor = false;
-            this.btnGet.Click += new System.EventHandler(this.btnGet_Click);
-
-            // 🔹 POST Button
-            this.btnPost.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPost.BackColor = System.Drawing.Color.LightGreen;
-            this.btnPost.Location = new System.Drawing.Point(250, 200);
-            this.btnPost.Name = "btnPost";
-            this.btnPost.Size = new System.Drawing.Size(220, 40);
-            this.btnPost.TabIndex = 3;
-            this.btnPost.Text = "Add Employee";
-            this.btnPost.UseVisualStyleBackColor = false;
-            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
-
-            // 🔹 Text Fields
-            this.txtName.Font = new System.Drawing.Font("Arial", 10F);
-            this.txtName.Location = new System.Drawing.Point(150, 260);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(320, 23);
-            this.txtName.TabIndex = 4;
-
-            this.txtEmail.Font = new System.Drawing.Font("Arial", 10F);
-            this.txtEmail.Location = new System.Drawing.Point(150, 300);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(320, 23);
-            this.txtEmail.TabIndex = 5;
-
-            this.txtDepartmentID.Font = new System.Drawing.Font("Arial", 10F);
-            this.txtDepartmentID.Location = new System.Drawing.Point(150, 340);
-            this.txtDepartmentID.Name = "txtDepartmentID";
-            this.txtDepartmentID.Size = new System.Drawing.Size(320, 23);
-            this.txtDepartmentID.TabIndex = 6;
-
-            // 🔹 Labels
-            this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.lblName.Location = new System.Drawing.Point(20, 263);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(49, 16);
-            this.lblName.TabIndex = 7;
-            this.lblName.Text = "Name:";
-
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.lblEmail.Location = new System.Drawing.Point(20, 303);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(51, 16);
-            this.lblEmail.TabIndex = 8;
-            this.lblEmail.Text = "Email:";
-
-            this.lblDepartmentID.AutoSize = true;
-            this.lblDepartmentID.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
-            this.lblDepartmentID.Location = new System.Drawing.Point(20, 343);
-            this.lblDepartmentID.Name = "lblDepartmentID";
-            this.lblDepartmentID.Size = new System.Drawing.Size(116, 16);
-            this.lblDepartmentID.TabIndex = 9;
-            this.lblDepartmentID.Text = "Department ID:";
-
-            // 🔹 Form1
-            this.ClientSize = new System.Drawing.Size(500, 400);
-            this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.listBoxEmployees);
-            this.Controls.Add(this.btnGet);
-            this.Controls.Add(this.btnPost);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtDepartmentID);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblDepartmentID);
-            this.Name = "Form1";
-            this.Text = "Rental Employee System";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            lblTitle = new Label();
+            listBoxEmployees = new ListBox();
+            btnGet = new Button();
+            btnPost = new Button();
+            txtName = new TextBox();
+            txtEmail = new TextBox();
+            txtDepartmentID = new TextBox();
+            lblName = new Label();
+            lblEmail = new Label();
+            lblDepartmentID = new Label();
+            SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Arial", 14F, FontStyle.Bold);
+            lblTitle.Location = new Point(120, 20);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(297, 29);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Employee Rental System";
+            // 
+            // listBoxEmployees
+            // 
+            listBoxEmployees.Font = new Font("Arial", 10F);
+            listBoxEmployees.FormattingEnabled = true;
+            listBoxEmployees.ItemHeight = 19;
+            listBoxEmployees.Location = new Point(20, 60);
+            listBoxEmployees.Name = "listBoxEmployees";
+            listBoxEmployees.Size = new Size(450, 118);
+            listBoxEmployees.TabIndex = 1;
+            listBoxEmployees.SelectedIndexChanged += listBoxEmployees_SelectedIndexChanged;
+            // 
+            // btnGet
+            // 
+            btnGet.BackColor = Color.LightSkyBlue;
+            btnGet.Font = new Font("Arial", 10F, FontStyle.Bold);
+            btnGet.Location = new Point(20, 200);
+            btnGet.Name = "btnGet";
+            btnGet.Size = new Size(220, 40);
+            btnGet.TabIndex = 2;
+            btnGet.Text = "Load Employees";
+            btnGet.UseVisualStyleBackColor = false;
+            btnGet.Click += btnGet_Click;
+            // 
+            // btnPost
+            // 
+            btnPost.BackColor = Color.LightGreen;
+            btnPost.Font = new Font("Arial", 10F, FontStyle.Bold);
+            btnPost.Location = new Point(250, 200);
+            btnPost.Name = "btnPost";
+            btnPost.Size = new Size(220, 40);
+            btnPost.TabIndex = 3;
+            btnPost.Text = "Add Employee";
+            btnPost.UseVisualStyleBackColor = false;
+            btnPost.Click += btnPost_Click;
+            // 
+            // txtName
+            // 
+            txtName.Font = new Font("Arial", 10F);
+            txtName.Location = new Point(150, 260);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(320, 27);
+            txtName.TabIndex = 4;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Font = new Font("Arial", 10F);
+            txtEmail.Location = new Point(150, 300);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(320, 27);
+            txtEmail.TabIndex = 5;
+            // 
+            // txtDepartmentID
+            // 
+            txtDepartmentID.Font = new Font("Arial", 10F);
+            txtDepartmentID.Location = new Point(150, 340);
+            txtDepartmentID.Name = "txtDepartmentID";
+            txtDepartmentID.Size = new Size(320, 27);
+            txtDepartmentID.TabIndex = 6;
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Arial", 10F, FontStyle.Bold);
+            lblName.Location = new Point(20, 263);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(59, 19);
+            lblName.TabIndex = 7;
+            lblName.Text = "Name:";
+            // 
+            // lblEmail
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Arial", 10F, FontStyle.Bold);
+            lblEmail.Location = new Point(20, 303);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(57, 19);
+            lblEmail.TabIndex = 8;
+            lblEmail.Text = "Email:";
+            // 
+            // lblDepartmentID
+            // 
+            lblDepartmentID.AutoSize = true;
+            lblDepartmentID.Font = new Font("Arial", 10F, FontStyle.Bold);
+            lblDepartmentID.Location = new Point(20, 343);
+            lblDepartmentID.Name = "lblDepartmentID";
+            lblDepartmentID.Size = new Size(128, 19);
+            lblDepartmentID.TabIndex = 9;
+            lblDepartmentID.Text = "Department ID:";
+            // 
+            // Form1
+            // 
+            ClientSize = new Size(500, 400);
+            Controls.Add(lblTitle);
+            Controls.Add(listBoxEmployees);
+            Controls.Add(btnGet);
+            Controls.Add(btnPost);
+            Controls.Add(txtName);
+            Controls.Add(txtEmail);
+            Controls.Add(txtDepartmentID);
+            Controls.Add(lblName);
+            Controls.Add(lblEmail);
+            Controls.Add(lblDepartmentID);
+            Name = "Form1";
+            Text = "Rental Employee System";
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }
